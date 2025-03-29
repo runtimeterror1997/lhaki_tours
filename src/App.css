@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.slick-dots li button:before {
+  color: blue;
+  /* Change dot color */
+  font-size: 12px;
+  /* Adjust dot size */
+}

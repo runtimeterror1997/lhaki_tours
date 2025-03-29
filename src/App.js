@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { lazy, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from "./views/Footer";
+import Header from "./views/Headers";
+import "./views/home.css";
+
+const Home = lazy(() => import("./views/Home"));
+const AboutUs = lazy(() => import("./views/AboutUs"));
+const AboutBhutan = lazy(() => import("./views/AboutBhutan"));
+const TourPackages = lazy(() => import("./views/TourPackages"));
+const TravelInfo = lazy(() => import("./views/TravelInfo"));
+const ContactUs = lazy(() => import("./views/ContactUs"));
+
+const LoadingSpinner = () => (
+  <div style={{ textAlign: "center", padding: "20px" }}>
+    <div className="spinner"></div>
+  </div>
+);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/about-bhutan" element={<AboutBhutan />} />
+          <Route path="/tours" element={<TourPackages />} />
+          <Route path="/travel-info" element={<TravelInfo />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+      </Suspense>
+      <Footer />
+    </Router>
   );
 }
 
