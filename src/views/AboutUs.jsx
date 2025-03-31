@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Typography, Paper } from "@mui/material";
+import { Box, Typography, Paper } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import flags from "../assets/home/flags.png"; // Background image
 import aboutus from "../assets/home/thimphu.png"; // Side image

@@ -1,16 +1,7 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  Typography,
-  Card,
-  CardActionArea,
-  CardMedia,
-} from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import { Box, Typography } from "@mui/material";
 
 import background from "../assets/home/footer.png";
-import { useLocation } from "react-router-dom";
 
 const lodgingOptions = [
   {
