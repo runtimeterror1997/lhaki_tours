@@ -10,22 +10,24 @@ const ContactUs = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log("email", e);
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_4z5ondj",
+        "template_nqqzdhv",
         form.current,
-        "YOUR_USER_ID"
+        "x-zUsRD9abGdt2UpF"
       )
       .then(
         (result) => {
           console.log("Email successfully sent!", result.text);
           alert("Message sent successfully!");
+          form.current.reset();
         },
         (error) => {
           console.error("Failed to send email:", error.text);
           alert("Failed to send message. Please try again later.");
+          form.current.reset();
         }
       );
   };
@@ -201,8 +203,7 @@ const ContactUs = () => {
             </Box>
             <Typography>Lhaki Tours and Travels</Typography>
             <Typography>
-              Opposite Bank of Bhutan, Flat No S9, Second Floor, Norzin
-              Lam-Thimphu 11001, Bhutan
+              Tharpai Lam, Phuentsholing, Chukha, 21101, Bhutan
             </Typography>
           </Grid>
           <Grid item>
@@ -210,18 +211,15 @@ const ContactUs = () => {
               <Phone />
               <Typography variant="h6">Phone:</Typography>
             </Box>
-            <Typography>+975 2 336702</Typography>
-            <Typography>
-              Call/WhatsApp: +975 17775309 / +975 77729299
-            </Typography>
+            <Typography>Call/WhatsApp: +975 77252790</Typography>
           </Grid>
           <Grid item>
             <Box display="flex" alignItems="center" gap={1}>
               <Email />
               <Typography variant="h6">Email Address:</Typography>
             </Box>
-            <Typography>bhutantravelcenter@gmail.com</Typography>
-            <Typography>info@bhutantravelcenter.com</Typography>
+            <Typography>bhutanlhakitoursandtravels2025@gmail.com</Typography>
+            <Typography>chadorgarabodboc@gmail.com</Typography>
           </Grid>
           <Grid item>
             <Box display="flex" alignItems="center" gap={1}>
@@ -231,7 +229,7 @@ const ContactUs = () => {
             <Typography>
               Monday - Friday: 9:00 AM - 8:00 PM (Local Time)
             </Typography>
-            <Typography>Saturday: 9:00 AM - 3:00 PM (Local Time)</Typography>
+            <Typography>Saturday: Closed</Typography>
             <Typography>Sunday: Closed</Typography>
           </Grid>
         </Grid>

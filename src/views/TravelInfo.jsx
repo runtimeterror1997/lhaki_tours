@@ -47,7 +47,7 @@ const TravelInfo = () => {
             color="white"
             sx={{
               py: 3,
-              mt: { xs: "40%", sm: "20%", md: "20%", lg: "10%" },
+              mt: { xs: "40%", sm: "20%", md: "20%", lg: "15%" },
               fontSize: { xs: "1.2rem", sm: "1.1rem", md: "1.7rem" },
             }}
           >

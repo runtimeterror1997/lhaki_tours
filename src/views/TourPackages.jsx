@@ -90,7 +90,7 @@ const TourPackages = () => {
                 fontSize: { xs: "1.2rem", sm: "1.1rem", md: "1.7rem" },
               }}
             >
-              Tour Packages
+              Itinerary Type
             </Typography>
           </Box>
         </div>

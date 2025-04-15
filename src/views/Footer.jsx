@@ -171,7 +171,7 @@ const Footer = () => {
                   href="/tours"
                   style={{ textDecoration: "none", color: "white" }}
                 >
-                  Tours
+                  Itinerary Type
                 </a>
               </Typography>
               <Typography
@@ -204,16 +204,16 @@ const Footer = () => {
                 Lhaki Tours & Travels
               </Typography>
               <Typography textAlign={"center"} variant="body2">
-                Samten Lam
+                Tharpai Lam
               </Typography>
               <Typography textAlign={"center"} variant="body2" sx={{ py: 1 }}>
                 Phuentsholing, Chukha
               </Typography>
               <Typography textAlign={"center"} variant="body2">
-                Phone: +975 77822240
+                Phone: +975 77252790
               </Typography>
               <Typography textAlign={"center"} variant="body2" sx={{ py: 1 }}>
-                Email: lhakitourstrek@gmail.com
+                Email: lhakitours&travels@gmail.com
               </Typography>
             </Grid>
 

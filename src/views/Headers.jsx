@@ -23,7 +23,7 @@ const Header = () => {
     { id: 2, link: "about us", route: "/about-us" },
     { id: 3, link: "about bhutan", route: "/about-bhutan" },
     { id: 4, link: "travel Info", route: "/travel-info" },
-    { id: 5, link: "tours", route: "/tours" },
+    { id: 5, link: "Itinerary Type", route: "/tours" },
     { id: 6, link: "contact us", route: "/contact-us" },
   ];
 
