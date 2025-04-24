@@ -196,7 +196,7 @@ const ContactUs = () => {
         </Grid>
         {/* Contact Information */}
         <Grid size={{ xs: 12, md: 6 }} container direction="column" spacing={3}>
-          <Grid item>
+          <Grid>
             <Box display="flex" alignItems="center" gap={1}>
               <Place />
               <Typography variant="h6">Physical Address:</Typography>
@@ -206,14 +206,14 @@ const ContactUs = () => {
               Tharpai Lam, Phuentsholing, Chukha, 21101, Bhutan
             </Typography>
           </Grid>
-          <Grid item>
+          <Grid>
             <Box display="flex" alignItems="center" gap={1}>
               <Phone />
               <Typography variant="h6">Phone:</Typography>
             </Box>
             <Typography>Call/WhatsApp: +975 77252790</Typography>
           </Grid>
-          <Grid item>
+          <Grid>
             <Box display="flex" alignItems="center" gap={1}>
               <Email />
               <Typography variant="h6">Email Address:</Typography>
@@ -221,7 +221,7 @@ const ContactUs = () => {
             <Typography>bhutanlhakitoursandtravels2025@gmail.com</Typography>
             <Typography>chadorgarabodboc@gmail.com</Typography>
           </Grid>
-          <Grid item>
+          <Grid>
             <Box display="flex" alignItems="center" gap={1}>
               <AccessTime />
               <Typography variant="h6">Working Hours:</Typography>

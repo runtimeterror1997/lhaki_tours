@@ -4,7 +4,9 @@ import Footer from "./views/Footer";
 import Header from "./views/Headers";
 import "./views/home.css";
 
-const Home = lazy(() => import("./views/Home"));
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+const Home = lazy(() => delay(100).then(() => import("./views/Home")));
 const AboutUs = lazy(() => import("./views/AboutUs"));
 const AboutBhutan = lazy(() => import("./views/AboutBhutan"));
 const TourPackages = lazy(() => import("./views/TourPackages"));

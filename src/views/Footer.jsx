@@ -213,7 +213,7 @@ const Footer = () => {
                 Phone: +975 77252790
               </Typography>
               <Typography textAlign={"center"} variant="body2" sx={{ py: 1 }}>
-                Email: lhakitours&travels@gmail.com
+                Email: bhutanlhakitoursandtravels2025@gmail.com
               </Typography>
             </Grid>
 

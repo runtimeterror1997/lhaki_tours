@@ -80,7 +80,16 @@ const Header = () => {
               >
                 {links?.map(({ id, link, route }) => (
                   <ListItem key={id} disablePadding sx={{ width: "auto" }}>
-                    <ListItemButton onClick={() => handleNavigation(route)}>
+                    <ListItemButton
+                      onClick={() => handleNavigation(route)}
+                      sx={{
+                        p: 0,
+                        "&:hover": {
+                          backgroundColor: "transparent", // remove background hover
+                          boxShadow: "none", // remove shadow
+                        },
+                      }}
+                    >
                       <RouterLink
                         to={route}
                         style={{
@@ -91,6 +100,14 @@ const Header = () => {
                           fontSize: "1.2rem",
                           cursor: "pointer",
                           textDecoration: "none",
+                        }}
+                        onMouseEnter={(e) => {
+                          e.target.style.color = "#FA8732"; // gold hover color (customize)
+                          //e.target.style.textDecoration = "underline"; // optional
+                        }}
+                        onMouseLeave={(e) => {
+                          e.target.style.color = "#ffffff";
+                          e.target.style.textDecoration = "none";
                         }}
                       >
                         {link}
