@@ -9,6 +9,7 @@ const AboutUs = () => {
     <div style={{ width: "100%", overflow: "hidden" }}>
       {/* Hero Section */}
       <Box
+        loading="lazy"
         sx={{
           position: "relative",
           width: "100%",

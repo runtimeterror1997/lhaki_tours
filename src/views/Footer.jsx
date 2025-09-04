@@ -9,11 +9,17 @@ import logo from "../assets/logo.png"; // Logo image for social media section
 
 const Footer = () => {
   return (
-    <Box sx={{ width: "100%", position: "relative", overflow: "hidden" }}>
+    <Box
+      loading="lazy"
+      sx={{ width: "100%", position: "relative", overflow: "hidden" }}
+    >
       {/* Background Section */}
 
       {/* Footer Links Section */}
-      <Box sx={{ backgroundColor: "#757575", color: "white", py: 5 }}>
+      <Box
+        loading="lazy"
+        sx={{ backgroundColor: "#757575", color: "white", py: 5 }}
+      >
         <Container maxWidth="lg">
           <Grid
             container

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -68,16 +68,13 @@ const Home = () => {
     dots: true,
     infinite: images.length > 1,
     speed: 800,
-    lazyzLoad: true,
+    lazyLoad: "ondemand",
     slidesToShow: Math.min(images.length, 1),
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 7000,
     fade: true,
     pauseOnHover: true,
-    //beforeChange: (current, next) => setSlideIndex(next),
-    //nextArrow: <CustomNextArrow />,
-    //ssprevArrow: <CustomPrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -107,6 +104,7 @@ const Home = () => {
     <div>
       <Box
         name="home"
+        loading="lazy"
         sx={{
           height: "100vh",
           width: "100%",

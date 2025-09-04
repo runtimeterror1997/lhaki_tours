@@ -23,10 +23,11 @@ const AboutBhutan = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
+    lazyLoad: "ondemand",
   };
 
   return (
-    <Box sx={{ width: "100%", overflow: "hidden" }}>
+    <Box loading="lazy" sx={{ width: "100%", overflow: "hidden" }}>
       {/* Image Slider */}
       <div>
         <Slider {...settings}>

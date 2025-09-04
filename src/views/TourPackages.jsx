@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Box,
-
   Typography,
   Card,
   CardActionArea,
@@ -63,10 +62,11 @@ const TourPackages = () => {
   const route = location?.state;
 
   return (
-    <Box sx={{ width: "100%", overflow: "hidden" }}>
+    <Box loading="lazy" sx={{ width: "100%", overflow: "hidden" }}>
       {route === "/tours" && (
         <div>
           <Box
+            loading="lazy"
             sx={{
               width: "100%",
               height: "50vh",
@@ -95,7 +95,7 @@ const TourPackages = () => {
           </Box>
         </div>
       )}
-      <Box sx={{ width: "100%", overflow: "hidden" }}>
+      <Box loading="lazy" sx={{ width: "100%", overflow: "hidden" }}>
         <Grid
           container
           spacing={2}
@@ -103,7 +103,7 @@ const TourPackages = () => {
         >
           {tours.map((tour, index) => (
             <Grid item size={{ sm: 12, md: 6, lg: 4 }} key={index}>
-              <Card className="fade-card" >
+              <Card className="fade-card">
                 <CardActionArea>
                   <Box className="fade-card-inner">
                     <CardMedia

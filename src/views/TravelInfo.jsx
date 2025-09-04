@@ -3,31 +3,14 @@ import { Box, Typography } from "@mui/material";
 
 import background from "../assets/home/footer.png";
 
-const lodgingOptions = [
-  {
-    title: "Hotels",
-    description:
-      "From comfortable 3-star establishments to opulent 5-star accommodations like Amankora or Taj Tashi, all government-approved hotels typically offer amenities such as televisions, room service, and Wi-Fi. Note that luxury hotels may involve additional charges.",
-  },
-  {
-    title: "Farm Stays",
-    description:
-      "Experience authentic Bhutanese rural life by staying with local families in traditional farmhouses. These stays provide insights into age-old farming practices, complemented by home-cooked meals and warm hospitality.",
-  },
-  {
-    title: "Camping",
-    description:
-      "Ideal for multi-day treks, camping allows immersion in Bhutan's pristine natural landscapes. A dedicated guide and support team, including cooks and pack animals, ensure a comfortable and well-organized experience.",
-  },
-];
-
 const TravelInfo = () => {
   return (
-    <Box sx={{ width: "100%", overflow: "hidden" }}>
+    <Box loading="lazy" sx={{ width: "100%", overflow: "hidden" }}>
       {/* Content Section */}
 
       <div>
         <Box
+          loading="lazy"
           sx={{
             width: "100%",
             height: "50vh",

@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Box, Button, Typography, TextField, Container } from "@mui/material";
 import emailjs from "@emailjs/browser";
-import { Email, Phone, AccessTime, Home, Place } from "@mui/icons-material";
+import { Email, Phone, AccessTime, Place } from "@mui/icons-material";
 import Grid from "@mui/material/Grid2";
 import background from "../assets/home/contact.png";
 
@@ -37,6 +37,7 @@ const ContactUs = () => {
       {/* Content Section */}
       <div>
         <Box
+          loading="lazy"
           sx={{
             width: "100%",
             height: "50vh",
