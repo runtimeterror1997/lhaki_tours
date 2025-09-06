@@ -3,8 +3,8 @@ import { Box, Container, Typography, IconButton } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PinterestIcon from "@mui/icons-material/Pinterest";
+import WhatsApp from "@mui/icons-material/WhatsApp";
+import Email from "@mui/icons-material/Email";
 import logo from "../assets/logo.png"; // Logo image for social media section
 
 const Footer = () => {
@@ -248,17 +248,48 @@ const Footer = () => {
                 }}
               >
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
-                  <IconButton sx={{ color: "white" }}>
+                  {/* Facebook */}
+                  <IconButton
+                    sx={{ color: "white" }}
+                    component="a"
+                    href="https://www.facebook.com/share/14LMA2YHUzh/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FacebookIcon />
                   </IconButton>
-                  <IconButton sx={{ color: "white" }}>
+
+                  {/* WhatsApp */}
+                  <IconButton
+                    sx={{ color: "white" }}
+                    component="a"
+                    href="https://wa.me/97577252790"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <WhatsApp />
+                  </IconButton>
+
+                  {/* Email */}
+                  <IconButton
+                    sx={{ color: "white" }}
+                    component="a"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=bhutanlhakitoursandtravels2025@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Email />
+                  </IconButton>
+
+                  {/* Instagram */}
+                  <IconButton
+                    sx={{ color: "white" }}
+                    component="a"
+                    href="https://www.instagram.com/yourPageName"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <InstagramIcon />
-                  </IconButton>
-                  <IconButton sx={{ color: "white" }}>
-                    <LinkedInIcon />
-                  </IconButton>
-                  <IconButton sx={{ color: "white" }}>
-                    <PinterestIcon />
                   </IconButton>
                 </Box>
               </Box>

@@ -20,15 +20,15 @@ const overlayTexts = [
     title: "Explore the Majestic Punakha Valley",
     subtitle: "A Journey to Bhutan's Cultural Heart",
     description:
-      "Discover the beauty of Punakha's ancient monasteries and breathtaking landscapes.",
+      "Discover the beauty of Bhutan's ancient monasteries and breathtaking landscapes.",
     top: "0%",
   },
   {
     title: "Embrace the Peace at Buddha Dordenma",
-    subtitle: "A Tranquil Experience at the World's Largest Buddha Statue",
+    subtitle: "A Tranquil Experience at the Bhutan's Largest Buddha Statue",
     description:
       "Feel the serenity while gazing at the grand Buddha overlooking the valley.",
-    top: "0%",
+    top: "5%",
   },
   {
     title: "Scenic Views of Bhutan",
@@ -55,7 +55,7 @@ const overlayTexts = [
     title: "Bhutan's Sacred Cliffside Sanctuary",
     subtitle: "A Spiritual and Cultural Icon of Bhutan",
     description:
-      "​Perched 800m above Paro Valley, Bhutan's Tiger's Nest Monastery, is famed for Guru Rinpoche's 8th-century meditation and vibrant Paro Tshechu festival",
+      "Perched 800m above Paro Valley, Bhutan's Tiger's Nest Monastery—Guru Rinpoche's 8th-century meditation retreat—offers breathtaking views, cultural significance, and a profound spiritual experience.",
     top: "20%",
   },
 ];
@@ -72,7 +72,7 @@ const Home = () => {
     slidesToShow: Math.min(images.length, 1),
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 3000,
     fade: true,
     pauseOnHover: true,
     responsive: [

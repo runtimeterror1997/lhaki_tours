@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AppBar,
   Toolbar,
@@ -30,6 +30,19 @@ const Header = () => {
   const handleNavigation = (path) => {
     navigate(path, { state: path });
   };
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // change color after scrolling 50px
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <AppBar
@@ -95,19 +108,20 @@ const Header = () => {
                         style={{
                           textAlign: "center",
                           textTransform: "capitalize",
-                          color: "#ffffff",
+                          color: scrolled ? "#FA8732" : "#ffffff", // change color on scroll
                           fontWeight: 700,
-                          fontSize: "1.2rem",
+                          fontSize: "1.3rem",
                           cursor: "pointer",
                           textDecoration: "none",
+                          transition: "color 0.3s ease",
                         }}
                         onMouseEnter={(e) => {
-                          e.target.style.color = "#FA8732"; // gold hover color (customize)
-                          //e.target.style.textDecoration = "underline"; // optional
+                          e.target.style.color = "#FA8732";
                         }}
                         onMouseLeave={(e) => {
-                          e.target.style.color = "#ffffff";
-                          e.target.style.textDecoration = "none";
+                          if (!scrolled) {
+                            e.target.style.color = "#ffffff";
+                          }
                         }}
                       >
                         {link}
