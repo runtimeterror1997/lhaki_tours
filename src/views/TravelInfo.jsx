@@ -297,12 +297,13 @@ const TravelInfo = () => {
             paragraph
           >
             The official currency is the Ngultrum (Nu.), pegged to the Indian
-            Rupee, which is also widely accepted. It's advisable to carry US
-            Dollars for exchange upon arrival at airport currency exchange
-            counters or ATMs. Major towns feature ATMs that accept Visa and
-            Mastercard. While credit cards are accepted in upscale hotels and
-            select handicraft stores, carrying cash is practical for everyday
-            transactions.
+            Rupee, both cash and online transactions like BHIM(Bharat interface
+            for money) and UPI(Unified payments Interface) which is also widely
+            accepted. It's advisable to carry US Dollars for exchange upon
+            arrival at airport currency exchange counters or ATMs. Major towns
+            feature ATMs that accept Visa and Mastercard. While credit cards are
+            accepted in upscale hotels and select handicraft stores, carrying
+            cash is practical for everyday transactions.
           </Typography>
           <Typography
             variant="h5"

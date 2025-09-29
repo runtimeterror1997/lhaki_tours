@@ -1,8 +1,14 @@
-import React, { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { lazy, Suspense, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Footer from "./views/Footer";
 import Header from "./views/Headers";
 import "./views/home.css";
+import BhutanCulturaltour from "./views/ToursPackages/BhutanCulturalTour/ButanCulturalTour";
 
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
@@ -19,9 +25,20 @@ const LoadingSpinner = () => (
   </div>
 );
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // always scroll to top
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
@@ -29,6 +46,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/about-bhutan" element={<AboutBhutan />} />
           <Route path="/tours" element={<TourPackages />} />
+          <Route path="/cultural-tours" element={<BhutanCulturaltour />} />
           <Route path="/travel-info" element={<TravelInfo />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

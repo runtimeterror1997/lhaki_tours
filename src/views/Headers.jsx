@@ -47,7 +47,11 @@ const Header = () => {
   return (
     <AppBar
       position="fixed"
-      sx={{ backgroundColor: "transparent", boxShadow: 0 }}
+      sx={{
+        backgroundColor: scrolled ? "rgba(32, 31, 31, 0.9)" : "transparent", // transparent at top
+        boxShadow: scrolled ? 2 : "none", // no shadow at top
+        transition: "all 0.3s ease",
+      }}
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-around" }}>
         <Grid container>
@@ -62,8 +66,9 @@ const Header = () => {
                 src={logo}
                 alt="logo"
                 style={{
-                  width: "35%",
-                  height: "35%",
+                  paddingTop: "3%",
+                  width: "23%",
+                  height: "23%",
                   borderRadius: "10px",
                   marginRight: "10px",
                 }}

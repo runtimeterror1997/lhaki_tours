@@ -222,7 +222,7 @@ const ContactUs = () => {
             <Typography>bhutanlhakitoursandtravels2025@gmail.com</Typography>
             <Typography>chadorgarabodboc@gmail.com</Typography>
           </Grid>
-          <Grid>
+          {/* <Grid>
             <Box display="flex" alignItems="center" gap={1}>
               <AccessTime />
               <Typography variant="h6">Working Hours:</Typography>
@@ -232,7 +232,7 @@ const ContactUs = () => {
             </Typography>
             <Typography>Saturday: Closed</Typography>
             <Typography>Sunday: Closed</Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Grid>
     </Box>
