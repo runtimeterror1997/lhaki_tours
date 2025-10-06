@@ -107,15 +107,17 @@ const BhutanTrekingTour = () => {
         paddingBottom={2}
         sx={{ fontSize: { xs: "1rem", sm: "1.1rem", md: "1.2rem" } }}
       >
-        Bhutan Festival Tours provide a chance to fully experience the kingdom’s
-        iconic cultural celebrations, including the vibrant Tshechu festivals.
-        Held yearly in temples and dzongs, these lively events bring communities
-        together in their traditional attire, offering a genuine insight into
-        Bhutanese customs and heritage. With our festival tour package, you’ll
-        enjoy an immersive experience guided by knowledgeable locals. Witness
-        captivating masked dances, take part in sacred rituals for blessings,
-        and join in the joyous festivities. This Bhutan festival journey deepens
-        cultural appreciation and makes your travel experience truly memorable.
+        Embark on the ultimate Himalayan adventure in Bhutan, an unspoiled
+        kingdom where natural beauty, diverse cultures, and unique wildlife
+        thrive. Our Bhutan trekking tours offer hiking and outdoor enthusiasts
+        an unforgettable journey through lush forests, refreshing mountain
+        streams, and rewarding mountain trails, all while immersing in the
+        authentic charm of Bhutanese daily life and customs. Led by experienced
+        local guides, these treks cater to all paces and preferences, with
+        options ranging from short 2-day hikes to challenging 27-day
+        expeditions. Whether you seek a gentle nature walk or an intense
+        wilderness exploration, Bhutan’s breathtaking terrains promise an
+        unparalleled adventure, creating memories that will last a lifetime.
       </Typography>
       <Box loading="lazy" sx={{ width: "100%", overflow: "hidden" }}>
         <Grid
