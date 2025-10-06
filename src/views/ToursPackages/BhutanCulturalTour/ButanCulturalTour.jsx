@@ -9,61 +9,50 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import "../../home.css";
-
-import festival from "../../../assets/home/festival.png";
-import trekking from "../../../assets/home/bridge.png";
-import camping from "../../../assets/home/camping.png";
-import luxury from "../../../assets/home/punakha1.png";
-import adventure from "../../../assets/home/drugyel.png";
+import nature from "../../../assets/home/nature.png";
+import east from "../../../assets/home/east1.png";
+import traditional from "../../../assets/home/traditional.png";
 import background from "../../../assets/home/cultural_tour.png";
 import punakha from "../../../assets/home/punakha.png";
 import hidden from "../../../assets/home/scenic.png";
+import thimphu from "../../../assets/home/thimphu.png";
 
-
-import { useLocation, useNavigate, useNavigation } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 
 const tours = [
   {
     image: punakha,
     label: "Bhutan History and Heritage Tour",
-    // description:
-    //   "A Bhutan Cultural Tour offers an immersive experience into the rich traditions, history, and spiritual life of the Himalayan nation. Travelers visit iconic sites such as the Tiger's Nest Monastery and Punakha Dzong, exploring picturesque villages and engaging with locals to gain a deeper understanding of Bhutanese culture. Many tours also coincide with vibrant festivals, providing unique insights into the country's religious practices and communal celebrations. ",
+    route: "/history-heritage-tours",
   },
   {
     image: hidden,
-    label: "Hidden Bhutan Tour",
-    // description:
-    //   "​Bhutan Festival Tours immerse travelers in the nation's vibrant cultural heritage through Tsechus—Buddhist festivals honoring Guru Rinpoche. During these events, monks and lay performers don elaborate costumes to perform masked dances and rituals depicting Buddhist tales. Notable festivals like Paro Tsechu and Thimphu Tsechu attract locals and visitors, offering a unique insight into Bhutan's traditions and communal celebrations. ",
+    label: "Bhutan Hidden Tour",
+    route: "/bhutan-hiden-tours",
   },
   {
-    image: trekking,
-    label: "Bhutan Honeymoon Tour",
-    // description:
-    //   "​Bhutan offers a variety of trekking experiences, from short hikes like the Druk Path Trek—a five to six-day journey connecting Paro and Thimphu along ancient trade routes—to challenging adventures such as the 23-day Snowman Trek. Trekkers can explore the recently restored 403 km Trans Bhutan Trail, which traverses the country from Haa to Trashigang, passing through 27 gewogs across nine dzongkhags. These treks provide immersive experiences into Bhutan's natural beauty and cultural heritage",
+    image: thimphu,
+    label: "Heart of Bhutan Cultural Tour",
+    route: "/bhutan-heart-cultural-tours",
   },
   {
-    image: camping,
+    image: east,
     label: "East to West Bhutan Heritage Tours",
-    // description:
-    //   "​Bhutan Camping Tours provide immersive experiences in the kingdom's unspoiled landscapes, combining trekking adventures with overnight stays in remote locations. For instance, the Bumdra Trek includes a night of camping in the wilderness, offering a blend of natural beauty and cultural exploration. These tours often feature fully supported camping with experienced crews, ensuring comfort while maintaining a minimal environmental footprint. Participants can enjoy breathtaking views, visit ancient monasteries, and gain insights into Bhutan's rich heritage",
+    route: "/east-west-heritage-tours",
   },
   {
-    image: luxury,
+    image: traditional,
     label: "Bhutan Traditions Imersion Tour",
-    // description:
-    //   "Bhutan Luxury Tours offer discerning travelers an exclusive journey through the kingdom's serene monasteries, stunning landscapes, and rich traditions. Tailored experiences may include private guided visits to sacred sites, stays in premium accommodations, and personalized cultural activities. These tours provide an intimate exploration of Bhutan's unique heritage, ensuring comfort and authenticity throughout the adventure.​",
+    route: "/bhutan-traditions-imemrsion-tours",
   },
   {
-    image: adventure,
-    label: "Bhutan Destination Weeding Tour",
-    // description:
-    //   "Bhutan Adventure and Nature Tours offer immersive experiences in the kingdom's pristine landscapes and rich cultural heritage. Activities include trekking to iconic sites like Tiger's Nest Monastery, exploring ancient fortresses, and hiking the historic Trans Bhutan Trail. These journeys provide opportunities to engage with local communities, witness diverse ecosystems, and appreciate Bhutan's commitment to environmental preservation",
+    image: nature,
+    label: "Bhutan Nature & Culture Tour",
+    route: "/bhutan-nature-tours",
   },
 ];
 
 const BhutanCulturaltour = () => {
-  const location = useLocation();
-  const route = location?.state;
   const navigate = useNavigate();
 
   return (
@@ -161,7 +150,7 @@ const BhutanCulturaltour = () => {
                         {tour.label}
                       </Typography>
                       <Button
-                        onClick={() => navigate("/contact-us")}
+                        onClick={() => navigate(`${tour?.route}`)}
                         variant="contained"
                         sx={{
                           mt: 1,

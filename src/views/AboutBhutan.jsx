@@ -3,15 +3,10 @@ import { Box, Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import punakha from "../assets/home/dochula.png";
-import bhuddha from "../assets/home/prayers.png";
-import scenic1 from "../assets/home/phalus.png";
 import maskdance from "../assets/home/chorten.png";
 import cham from "../assets/home/dcham.png";
-import thimphu from "../assets/home/thimphu.png";
-import jakar from "../assets/home/jakar.png";
 
-const images = [punakha, bhuddha, scenic1, maskdance, cham, thimphu, jakar];
+const images = [maskdance, cham];
 
 const AboutBhutan = () => {
   const settings = {

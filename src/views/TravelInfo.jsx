@@ -324,7 +324,7 @@ const TravelInfo = () => {
           >
             Bhutan offers a fleet of comfortable tourist vehicles, ranging from
             spacious Toyota Coaster buses for larger groups to smaller Hiace
-            buses, SUVs like the Tucson, and even Land Cruisers. Experienced,
+            buses, SUVs. Experienced,
             licensed drivers and guides accompany you throughout your journey,
             ensuring a seamless and enjoyable travel experience.​
           </Typography>
