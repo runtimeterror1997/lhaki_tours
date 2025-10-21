@@ -162,7 +162,7 @@ const BhutanLuxuryTour = () => {
                         variant="contained"
                         sx={{
                           mt: 1,
-                          backgroundColor: "#FA8732",
+                          backgroundColor: "#08452E",
                           borderRadius: "8px",
                           padding: "2",
                         }}

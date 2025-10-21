@@ -17,7 +17,7 @@ import luxury from "../assets/home/punakha1.png";
 import adventure from "../assets/home/adventure.png";
 import helicopter from "../assets/home/helicopter.png";
 import background from "../assets/home/jakar.png";
-import { useLocation, useNavigate, useNavigation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const tours = [
   {
@@ -141,15 +141,16 @@ const TourPackages = () => {
                         variant="contained"
                         sx={{
                           mt: 1,
-                          backgroundColor: "#FA8732",
+                          backgroundColor: "#08452E",
                           borderRadius: "8px",
                           padding: "2",
                         }}
                       >
                         <Typography
                           color={"white"}
-                          fontSize={12}
-                          fontWeight={700}
+                          fontSize={13}
+                          fontWeight={600}
+                          textTransform={"capitalize"}
                         >
                           View Detail
                         </Typography>

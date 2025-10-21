@@ -18,7 +18,7 @@ const Footer = () => {
       {/* Footer Links Section */}
       <Box
         loading="lazy"
-        sx={{ backgroundColor: "#757575", color: "white", py: 5 }}
+        sx={{ backgroundColor: "#08452E", color: "white", py: 5 }}
       >
         <Container maxWidth="lg">
           <Grid
@@ -233,8 +233,15 @@ const Footer = () => {
               <div align="center">
                 <img
                   src={logo}
-                  alt="Logo"
-                  style={{ width: 120, height: 95, marginRight: 10 }}
+                  alt="logo"
+                  style={{
+                    paddingTop: "2%",
+                    paddingBottom: "2%",
+                    width: "30%",
+                    height: "30%",
+                    borderRadius: "50%",
+                    marginRight: "10px",
+                  }}
                 />
               </div>
               <Typography variant="h6" fontWeight="bold" align="center">

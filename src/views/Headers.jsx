@@ -48,7 +48,7 @@ const Header = () => {
     <AppBar
       position="fixed"
       sx={{
-        backgroundColor: scrolled ? "rgba(32, 31, 31, 0.9)" : "transparent", // transparent at top
+        backgroundColor: scrolled ? "#08452E" : "transparent", // transparent at top
         boxShadow: scrolled ? 2 : "none", // no shadow at top
         transition: "all 0.3s ease",
       }}
@@ -68,9 +68,9 @@ const Header = () => {
                 style={{
                   paddingTop: "2%",
                   paddingBottom: "2%",
-                  width: "23%",
-                  height: "23%",
-                  borderRadius: "10px",
+                  width: "30%",
+                  height: "30%",
+                  borderRadius: "50%",
                   marginRight: "10px",
                 }}
               />
@@ -98,7 +98,7 @@ const Header = () => {
                 }}
               >
                 {links?.map(({ id, link, route }) => (
-                  <ListItem key={id} disablePadding sx={{ width: "auto" }}>
+                  <ListItem key={id} paddingTop="15%" sx={{ width: "auto" }}>
                     <ListItemButton
                       onClick={() => handleNavigation(route)}
                       sx={{
@@ -114,7 +114,7 @@ const Header = () => {
                         style={{
                           textAlign: "center",
                           textTransform: "capitalize",
-                          color: scrolled ? "#FA8732" : "#ffffff", // change color on scroll
+                          color: "#ffffff", // change color on scroll
                           fontWeight: 700,
                           fontSize: "1.3rem",
                           cursor: "pointer",
@@ -122,7 +122,7 @@ const Header = () => {
                           transition: "color 0.3s ease",
                         }}
                         onMouseEnter={(e) => {
-                          e.target.style.color = "#FA8732";
+                          e.target.style.color = "#fff";
                         }}
                         onMouseLeave={(e) => {
                           if (!scrolled) {

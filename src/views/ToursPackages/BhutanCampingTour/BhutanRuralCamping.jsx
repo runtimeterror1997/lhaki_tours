@@ -9,6 +9,7 @@ import TourInfo from "../../TourInfo";
 
 const BhutanRuralCamping = () => {
 
+
   const itinerary = [
     {
       day: "Day 01: Arrival in Paro to Thimphu",

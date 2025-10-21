@@ -96,7 +96,7 @@ const ContactUs = () => {
                 required
                 sx={{
                   "& label.Mui-focused": {
-                    color: "#FA8732", // Label color when focused
+                    color: "#08452E", // Label color when focused
                   },
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
@@ -106,7 +106,7 @@ const ContactUs = () => {
                       borderColor: "darkgray", // Border color on hover
                     },
                     "&.Mui-focused fieldset": {
-                      borderColor: "#FA8732", // Border color when focused
+                      borderColor: "#08452E", // Border color when focused
                     },
                   },
                 }}
@@ -120,7 +120,7 @@ const ContactUs = () => {
                 required
                 sx={{
                   "& label.Mui-focused": {
-                    color: "#FA8732", // Label color when focused
+                    color: "#08452E", // Label color when focused
                   },
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
@@ -130,7 +130,7 @@ const ContactUs = () => {
                       borderColor: "darkgray", // Border color on hover
                     },
                     "&.Mui-focused fieldset": {
-                      borderColor: "#FA8732", // Border color when focused
+                      borderColor: "#08452E", // Border color when focused
                     },
                   },
                 }}
@@ -143,7 +143,7 @@ const ContactUs = () => {
                 required
                 sx={{
                   "& label.Mui-focused": {
-                    color: "#FA8732", // Label color when focused
+                    color: "#08452E", // Label color when focused
                   },
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
@@ -153,7 +153,7 @@ const ContactUs = () => {
                       borderColor: "darkgray", // Border color on hover
                     },
                     "&.Mui-focused fieldset": {
-                      borderColor: "#FA8732", // Border color when focused
+                      borderColor: "#08452E", // Border color when focused
                     },
                   },
                 }}
@@ -168,7 +168,7 @@ const ContactUs = () => {
                 required
                 sx={{
                   "& label.Mui-focused": {
-                    color: "#FA8732", // Label color when focused
+                    color: "#08452E", // Label color when focused
                   },
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
@@ -178,7 +178,7 @@ const ContactUs = () => {
                       borderColor: "darkgray", // Border color on hover
                     },
                     "&.Mui-focused fieldset": {
-                      borderColor: "#FA8732", // Border color when focused
+                      borderColor: "#08452E", // Border color when focused
                     },
                   },
                 }}
@@ -186,7 +186,7 @@ const ContactUs = () => {
               <Box textAlign="center" mt={2}>
                 <Button
                   variant="contained"
-                  sx={{ backgroundColor: "#FA8732" }}
+                  sx={{ backgroundColor: "#08452E" }}
                   type="submit"
                 >
                   Send Message
@@ -196,7 +196,7 @@ const ContactUs = () => {
           </Box>
         </Grid>
         {/* Contact Information */}
-        <Grid size={{ xs: 12, md: 6 }} container direction="column" spacing={3}>
+        <Grid size={{ xs: 12, md: 6 }} container direction="column" spacing={3} paddingTop={'10%'}>
           <Grid>
             <Box display="flex" alignItems="center" gap={1}>
               <Place />

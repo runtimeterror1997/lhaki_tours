@@ -38,11 +38,11 @@ const WangdueTsechu = () => {
       details: `After breakfast, visit Gangtey Gompa, the only Nyingmapa monastery in western Bhutan and a highly spiritual site. From there, enjoy views of the scenic Black Mountain range and the Phobjikha Valley, home to black-necked cranes during the winter. Overnight stay at a hotel in Gangtey.`,
     },
     {
-      day: "Day 07: Gantey - Paro",
+      day: "Day 08: Gantey - Paro",
       details: `After breakfast, begin the drive to Paro, stopping for lunch in Wangdue Phodrang along the way. Overnight stay at a hotel in Paro.`,
     },
     {
-      day: "Day 08: Depart from Paro",
+      day: "Day 09: Depart from Paro",
       details: "Drive to the Airport for the departure.",
     },
   ];
