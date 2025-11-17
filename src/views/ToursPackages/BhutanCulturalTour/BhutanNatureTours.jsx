@@ -8,13 +8,10 @@ import Itinerary from "../../Itinerary";
 import TourInfo from "../../TourInfo";
 
 const BhutanNatureTours = () => {
-
   const itinerary = [
     {
       day: "Day 01: Arrival in Paro to Thimphu",
-      details: `ChatGPT said:
-
-The flight to Paro offers one of the most breathtaking mountain vistas globally, with ever-changing views of some of the planet’s tallest peaks. Upon arrival, our representative will welcome you at Paro airport. After lunch, enjoy afternoon sightseeing in Paro, visiting the National Museum at Ta Dzong and Rimpung Dzong. Later, drive to the capital, Thimphu, a city unlike any other in the world — it has no traffic lights, with a lone policeman directing vehicles at intersections using hand signals, a unique sight to witness.`,
+      details: `The flight to Paro offers one of the most breathtaking mountain vistas globally, with ever-changing views of some of the planet’s tallest peaks. Upon arrival, our representative will welcome you at Paro airport. After lunch, enjoy afternoon sightseeing in Paro, visiting the National Museum at Ta Dzong and Rimpung Dzong. Later, drive to the capital, Thimphu, a city unlike any other in the world — it has no traffic lights, with a lone policeman directing vehicles at intersections using hand signals, a unique sight to witness.`,
     },
     {
       day: "Day 02: Thimphu",
@@ -54,6 +51,55 @@ The flight to Paro offers one of the most breathtaking mountain vistas globally,
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport",
+      details: `Our representative will pick you up from the aforementioned location and transport you to Phuentsholing. Upon arriving in Jaigaon, your private guide and driver will greet you in the border town and transfer you to Phuentsholing after completing immigration and customs procedures at the Phuentsholing Border checkpoint. Phuentsholing, located in the southwest, serves as the gateway to western Bhutan, while Jaigaon in West Bengal, India, is its Indian counterpart. These border towns form the main trade connection between India and Bhutan. Afterward, visit the Zangthopelri Lhakhang temple situated in the town center. You will have the evening to unwind—consider taking a stroll through the lively Phuentsholing town, Bhutan’s busiest commercial area. In the evening, enjoy a welcome drink and dinner with BGT. 
+      Overnight stay at a hotel in Phuntsholing.`,
+    },
+    {
+      day: "Day 02: Phuntsholing - Thimphu",
+      details: `After breakfast, depart from Phuentsholing and travel approximately 171 km, taking 4-5 hours, to Thimphu, the capital of Bhutan with around 138,736 residents. Along the way, enjoy photo stops on Bhutan’s first highway, built in 1962 by the Indian border roads organization DANTAK. Stop at Kharbandi Gonpa temple, constructed in 1967 by the late Queen Ashi Phuntsho Choden, before reaching the Rinchending checkpoint (10 km). Continue through Gedu (43 km), known for the Gedu College of Business Studies founded in 2008. Follow the recently opened Damchu-Chhukha double-lane bypass (29 km) to Chhukha, home to Bhutan’s first hydroelectric plant with a 336-MW capacity and a 6.5-km tunnel. Next, reach Chhuzom (59 km), a key junction where the Pachhu and Wangchhu Rivers meet, connecting routes to Thimphu, Haa, and Paro. Take the right turn towards Thimphu (30 km), a city located 2,300 meters above sea level, set in a picturesque rural valley with traditional Bhutanese architecture. Notably, Bhutan has no traffic lights; instead, police manage traffic with intricate hand signals at intersections. Use your free time in the evening to relax or explore Thimphu’s streets. Overnight stay in Thimphu.`,
+    },
+    {
+      day: "Day 03: Thimphu",
+      details: `Spend a full day exploring Thimphu, starting with a visit to the National Memorial Chorten, which showcases Buddhist teachings through intricate paintings and statues. Built under the initiative of the Third King, the Chorten was intended to safeguard Bhutan from the adverse effects of modernization. Time permitting, you may also visit the Takin enclosure, home to Bhutan’s national animal, and explore the impressive Tashichhodzong. Overnight stay at a hotel in Thimphu.`,
+    },
+    {
+      day: "Day 04: Thimphu - Punakha",
+      details: `Start the day early with a drive toward Punakha, stopping at Dochula Pass (3,000m) to admire the Himalayan peaks and circumambulate the chortens. Enjoy a refreshing 40-minute downhill walk through rhododendron forests, offering a peaceful break from city life. Continue with a scenic two-hour stroll through villages and farmland. In spring, you’ll pass green rice terraces, small villages, and spot diverse trees, plants, and birds; in autumn, you may witness farmers harvesting their terraces and eagles soaring over forested valleys. Along the way, visit Chimi Lhakhang, also known as the “Temple of Fertility,” built in 1499 by Lama Drukpa Kuenley, popularly called “The Divine Madman.” Lama Drukpa Kuenley (1455–1529), a favorite Bhutanese saint, traveled across Bhutan and Tibet as a yogi, using humor, songs, and unconventional behavior to teach salvation. Overnight stay at a hotel in Punakha.`,
+    },
+    {
+      day: "Day 05: Punakha",
+      details: `In the morning, visit Punakha Dzong, constructed in 1637 by the Shabdrung, the ‘Unifier of Bhutan,’ as foretold by Guru Rinpoche (Padmasambhava). Afterwards, drive to Yabesa village and enjoy a hike through rice fields up to Khamsum Yulley Namgyal Chorten, built by Her Majesty Queen Ashi Tshering Yangdon Wangchuk. Situated atop a hill along the riverbank, the Chorten features intricate paintings representing the Nyingmapa tradition.`,
+    },
+    {
+      day: "Day 06: Punakha – Trongsa",
+      details: `In the morning, drive toward Trongsa, stopping en route to visit the picturesque Chendebji Chorten, built in the 18th century. As you approach the town along a winding road, catch sight of the majestic Trongsa Dzong perched above a deep canyon. Trongsa is renowned as the ancestral home of Bhutan’s royal family. Overnight stay at a hotel in Trongsa.`,
+    },
+    {
+      day: "Day 07: Trongsa – Phobjikha",
+      details: `After breakfast, transfer to Phobjikha Valley, driving along winding mountain roads through oak and rhododendron forests into the expansive, scenic valley. Phobjikha is one of Bhutan’s rare glacial valleys and serves as the winter habitat for black-necked cranes (November–March) that migrate from the Tibetan Plateau.`,
+    },
+    {
+      day: "Day 08: Phobjikha Valley - Wangdue (Shasila Hike)",
+      details: `Drive to Longtey Village, situated beyond Pele La Pass (3,420m), for a hike across Kayche La (3,700m) and back to Gangtey. The trail gradually ascends through thickets of dwarf bamboo, birch, rhododendron, hemlock, and fir, teeming with diverse birdlife, reaching Kayche La, marked with prayer flags. From the pass, the path descends through expansive meadows and farmland, leading back to Gangtey.`,
+    },
+    {
+      day: "Day 09: Wangdue - Paro",
+      details: `Drive back to Paro via Dochu La Pass, stopping in Thimphu to explore handicraft and souvenir shops and enjoy lunch at a local restaurant. Continue the journey to Paro, visiting Semtokha Dzong, Bhutan’s oldest dzong, along the way. Time permitting, make a brief stop at Tamchhu Lhakhang, built by Thangtong Gyalpo, famously known as the Iron Bridge Builder. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 10: Paro",
+      details: `After breakfast, drive to the base of Taktsang Monastery, also known as the ‘Tiger’s Nest’ (3,120m), for a hike up to this iconic site. The trail is wide, and the uphill walk takes around 2 hours, offering breathtaking views of the monastery perched on a sheer cliff 900 meters above the valley. Taktsang is a significant pilgrimage site where Guru Rinpoche is said to have flown on a tigress in the 8th century to bring Buddhist teachings to Bhutan and meditated in a cave for three months—the foundation of the monastery. In the afternoon, drive to the nearly restored Drukgyel Dzong, with the majestic Mount Jomolhari (7,314m) forming a stunning backdrop in clear weather. On the return to Paro, explore additional sights in the valley. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 11: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Take in breathtaking panoramic views of the Himalayan ranges from Dochula Pass.",
@@ -70,7 +116,6 @@ The flight to Paro offers one of the most breathtaking mountain vistas globally,
     {
       key: "Embark on a rewarding hike to the iconic Tiger’s Nest Monastery (Paro Taktsang), dramatically perched on a cliffside.",
     },
-    
   ];
 
   const tourDetails = {
@@ -149,7 +194,7 @@ The flight to Paro offers one of the most breathtaking mountain vistas globally,
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

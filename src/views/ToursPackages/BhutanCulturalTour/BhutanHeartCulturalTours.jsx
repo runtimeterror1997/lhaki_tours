@@ -51,6 +51,47 @@ Return to your hotel and, in the evening, explore Paro Town. Overnight stay at a
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport",
+      details: `Our representative will pick you up from the aforementioned location and transport you to Phuentsholing. Upon arriving in Jaigaon, your private guide and driver will greet you in the border town and transfer you to Phuentsholing after completing immigration and customs procedures at the Phuentsholing Border checkpoint. Phuentsholing, located in the southwest, serves as the gateway to western Bhutan, while Jaigaon in West Bengal, India, is its Indian counterpart. These border towns form the main trade connection between India and Bhutan. Afterward, visit the Zangthopelri Lhakhang temple situated in the town center. You will have the evening to unwind—consider taking a stroll through the lively Phuentsholing town, Bhutan’s busiest commercial area. In the evening, enjoy a welcome drink and dinner with BGT. 
+      Overnight stay at a hotel in Phuntsholing.`,
+    },
+    {
+      day: "Day 02: Phuntsholing - Thimphu",
+      details: `After breakfast, depart from Phuentsholing and travel approximately 171 km, taking 4-5 hours, to Thimphu, the capital of Bhutan with around 138,736 residents. Along the way, enjoy photo stops on Bhutan’s first highway, built in 1962 by the Indian border roads organization DANTAK. Stop at Kharbandi Gonpa temple, constructed in 1967 by the late Queen Ashi Phuntsho Choden, before reaching the Rinchending checkpoint (10 km). Continue through Gedu (43 km), known for the Gedu College of Business Studies founded in 2008. Follow the recently opened Damchu-Chhukha double-lane bypass (29 km) to Chhukha, home to Bhutan’s first hydroelectric plant with a 336-MW capacity and a 6.5-km tunnel. Next, reach Chhuzom (59 km), a key junction where the Pachhu and Wangchhu Rivers meet, connecting routes to Thimphu, Haa, and Paro. Take the right turn towards Thimphu (30 km), a city located 2,300 meters above sea level, set in a picturesque rural valley with traditional Bhutanese architecture. Notably, Bhutan has no traffic lights; instead, police manage traffic with intricate hand signals at intersections. Use your free time in the evening to relax or explore Thimphu’s streets. Overnight stay in Thimphu.`,
+    },
+    {
+      day: "Day 03: Thimphu - Punakha",
+      details: `Drive over Dochu La Pass (3,100 m), which offers stunning Himalayan views on clear days, before descending into the warm Punakha Valley (approximately 3 hours total).
+Punakha, Bhutan’s former capital, is home to Punakha Dzong, the “Palace of Great Happiness,” built in 1637 by Shabdrung, the Unifier of Bhutan, as foretold by Guru Rimpoche (Padmasambhava). After lunch, drive about 12 km and walk across rice fields and a river to reach Khamsum Yulley Namgyal Chorten on Ngezergang hill, showcasing paintings and statues of the Nyingmapa tradition. Visit Metshina Village and take a 20-minute walk through rice fields to Chimi Lhakhang, the fertility temple, where a special blessing can be received if desired. Overnight stay at a hotel in Punakha.`,
+    },
+    {
+      day: "Day 04: Punakha - Gangtey",
+      details: `Start the day with a drive to Gangtey, passing through lush oak and rhododendron forests. Upon arrival at Gangtey village, visit Gangtey Gompa, the only Nyingmapa monastery in western Bhutan. Enjoy views of the scenic Black Mountain range and Phobjikha Valley, the winter home of black-necked cranes. Overnight stay at a hotel in Gangtey.`,
+    },
+    {
+      day: "Day 05: Gantey – Paro",
+      details: `After breakfast, drive to Paro. After lunch, visit the nearly rebuilt Drukgyel Dzong, with the majestic Mount Jomolhari (7,314 m) as a backdrop on clear days. On the return to Paro, enjoy sightseeing in the valley, including visits to Ta Dzong Museum and Rimpung Dzong, along with other local attractions. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 06: Hike Paro Tiger’s Nest Monastery",
+      details: `After breakfast, hike to Taktsang Monastery, also called the ‘Tiger’s Nest’. The climb to the viewpoint takes about 3 hours, offering spectacular views of the monastery perched on the cliffside. Pause for refreshments at the View Point Cafeteria, then continue up to the monastery, which takes an additional 1½ hours. Legend says that in the 8th century, Guru Rinpoche flew here on a tigress and meditated in a cave for three months. The main monastery dates back to 1692 and, although damaged by fire in 1998, has been fully restored.
+After visiting the monastery, descend to the road, stopping for lunch at the viewpoint cafeteria. Return to your hotel and relax with a complimentary traditional hot stone bath. In the evening, explore Paro Town. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 07:  Paro – Chelela  - Paro",
+      details: `After breakfast, drive to Chelela Pass, Bhutan’s highest motorable point at 3,988 m (13,084 ft), offering spectacular Himalayan views. The pass lies between Paro and Haa valleys. Beginning from Paro, the route winds through enchanting pine, oak, and rhododendron forests, which bloom in vivid red and pink during April and May, with the fragrant scent of daphne in the air.
+About 10 km from the top, spot Kila Nunnery perched on a hillside, with prayer flags lining the walking path. Above the tree line, you may encounter yaks grazing in alpine meadows. The pass is adorned with numerous prayer flags against the deep blue sky, and on clear days, Mt. Jomolhari and other Himalayan peaks provide a breathtaking backdrop.
+Return to your hotel and, in the evening, explore Paro Town. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 08: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Discover historic Buddhist monasteries and sacred sites.",
@@ -146,7 +187,7 @@ Return to your hotel and, in the evening, explore Paro Town. Overnight stay at a
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

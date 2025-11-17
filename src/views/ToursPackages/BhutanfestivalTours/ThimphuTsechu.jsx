@@ -43,6 +43,41 @@ In the afternoon, drive to the almost fully reconstructed Drukgyel Dzong, and on
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport - Thimphu",
+      details: `Upon arrival at Bagdora Airport, you will be driven to the Bhutan border town of Phuentsholing. After completing immigration and customs formalities at the Phuentsholing checkpoint, your private guide and driver will welcome you and assist you across the border. Phuentsholing serves as the main gateway to western Bhutan and connects with Jaigaon on the Indian side. You will visit the Zangthopelri Lhakhang located in the town center before continuing your journey toward Thimphu. In the evening, enjoy a welcome drink and dinner, followed by an overnight stay at a hotel in Thimphu.`,
+    },
+    {
+      day: "Day 02: Thimphu",
+      details: `After breakfast, drive to Tashichhodzong to attend the Thimphu Festival, where locals dressed in their finest attire travel from miles around to participate in the vibrant celebrations.`,
+    },
+    {
+      day: "Day 03: Thimphu",
+      details: `Enjoy a morning of sightseeing with visits to the 12th-century Changangkha Temple and the National Memorial Chorten, which showcases Buddhist faith through intricate paintings and statues. In the afternoon, return to Tashichhodzong to continue experiencing the vibrant celebrations of the Thimphu festival.`,
+    },
+    {
+      day: "Day 04: Thimphu - Punakha",
+      details: `Drive over the scenic Dochu-La Pass (3,100 meters), which on a clear day offers stunning views of the Himalayan peaks, before descending into the warm Punakha Valley (approximately 3 hours of driving). Upon arrival, visit Punakha Dzong, the “Palace of Great Happiness,” built in 1637 by the Shabdrung, Bhutan’s unifier. After lunch, take a walk to Chimi Lhakhang, the temple of Drukpa Kuenly, also known as the Divine Madman.`,
+    },
+    {
+      day: "Day 05: Punakha - Thimphu - Paro",
+      details: `In the morning, drive to Yabesa village and hike through the rice fields up to Khamsum Yueley Namgyal Chorten, built by Her Majesty Queen Ashi Tshering Yangdon Wangchuk.
+After the hike, drive back to Thimphu to visit The National Library, which houses a collection of Bhutanese scriptures dating back to the 8th century, and explore a fascinating replica of a medieval farmhouse at the Folk Heritage Museum.
+Later, proceed to Paro, and upon arrival, check into your hotel.`,
+    },
+    {
+      day: "Day 06: Paro",
+      details: `After breakfast, hike to Taktsang Monastery. The broad trail takes approximately 2 hours uphill, ascending nearly a kilometer above the Paro valley floor. For those unable to hike, a horse transfer to the viewing point can be arranged.
+In the afternoon, drive to the almost fully reconstructed Drukgyel Dzong, and on the return journey to Paro, visit other sights in the Paro valley. Overnight at your hotel in Paro.`,
+    },
+    {
+      day: "Day 07: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Experience the vibrant and colorful atmosphere of the Thimphu Tshechu festival.",
@@ -141,7 +176,7 @@ In the afternoon, drive to the almost fully reconstructed Drukgyel Dzong, and on
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

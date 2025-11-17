@@ -68,8 +68,8 @@ const Header = () => {
                 style={{
                   paddingTop: "2%",
                   paddingBottom: "2%",
-                  width: "30%",
-                  height: "30%",
+                  width: "25%",
+                  height: "25%",
                   borderRadius: "50%",
                   marginRight: "10px",
                 }}

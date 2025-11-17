@@ -65,6 +65,66 @@ Upon arrival, visit the Gangtey Goempa (Monastery) — the only Nyingmapa monast
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport",
+      details: `Our representative will pick you up from the aforementioned location and transport you to Phuentsholing. Upon arriving in Jaigaon, your private guide and driver will greet you in the border town and transfer you to Phuentsholing after completing immigration and customs procedures at the Phuentsholing Border checkpoint. Phuentsholing, located in the southwest, serves as the gateway to western Bhutan, while Jaigaon in West Bengal, India, is its Indian counterpart. These border towns form the main trade connection between India and Bhutan. Afterward, visit the Zangthopelri Lhakhang temple situated in the town center. You will have the evening to unwind—consider taking a stroll through the lively Phuentsholing town, Bhutan’s busiest commercial area. In the evening, enjoy a welcome drink and dinner with BGT. 
+      Overnight stay at a hotel in Phuntsholing.`,
+    },
+    {
+      day: "Day 02: Phuntsholing - Thimphu",
+      details: `After breakfast, depart from Phuentsholing and travel approximately 171 km, taking 4-5 hours, to Thimphu, the capital of Bhutan with around 138,736 residents. Along the way, enjoy photo stops on Bhutan’s first highway, built in 1962 by the Indian border roads organization DANTAK. Stop at Kharbandi Gonpa temple, constructed in 1967 by the late Queen Ashi Phuntsho Choden, before reaching the Rinchending checkpoint (10 km). Continue through Gedu (43 km), known for the Gedu College of Business Studies founded in 2008. Follow the recently opened Damchu-Chhukha double-lane bypass (29 km) to Chhukha, home to Bhutan’s first hydroelectric plant with a 336-MW capacity and a 6.5-km tunnel. Next, reach Chhuzom (59 km), a key junction where the Pachhu and Wangchhu Rivers meet, connecting routes to Thimphu, Haa, and Paro. Take the right turn towards Thimphu (30 km), a city located 2,300 meters above sea level, set in a picturesque rural valley with traditional Bhutanese architecture. Notably, Bhutan has no traffic lights; instead, police manage traffic with intricate hand signals at intersections. Use your free time in the evening to relax or explore Thimphu’s streets. Overnight stay in Thimphu.`,
+    },
+    {
+      day: "Day 03: Thimphu",
+      details: `Spend the day exploring Thimphu’s highlights, starting with a visit to the National Memorial Chorten — built by the Royal Queen Mother in honor of the Third King, who passed away in 1972. Continue your cultural journey with stops at the historic 12th-century Changangkha Temple and the peaceful Zilukha Nunnery.
+If your stay falls on a weekend, take the opportunity to stroll through the lively Thimphu Market, open from Friday to mid-Sunday. Overnight stay at your hotel in Thimphu.`,
+    },
+    {
+      day: "Day 04: Thimphu",
+      details: `Continue exploring the cultural treasures of Thimphu with visits to the School of Arts and Crafts and the National Library, which preserves Bhutanese scriptures dating back to the 8th century. Discover traditional craftsmanship at the Paper Factory and step back in time with a visit to the Folk Heritage Museum, showcasing a replica of a medieval Bhutanese farmhouse.
+If time permits, you can also stop by the Takin Reserve — home to Bhutan’s national animal — and explore the impressive Tashichhodzong. Spend the night at your hotel in Thimphu.`,
+    },
+    {
+      day: "Day 005: Thimphu – Punakha",
+      details: `Travel across the scenic Dochu-La Pass (3,100 m), where, on a clear day, you’ll be rewarded with breathtaking views of the Himalayan peaks, before descending into the warm and lush Punakha Valley (approximately 3 hours’ drive).
+Once the ancient capital of Bhutan, Punakha is home to the magnificent Punakha Dzong — the “Palace of Great Happiness” — built in 1637 by Zhabdrung. After lunch, take a leisurely walk to Chimi Lhakhang, the revered temple of Drukpa Kuenley. Spend the night at your hotel in Punakha or Wangduephodrang.`,
+    },
+    {
+      day: "Day 06: Punakha – Trongsa – Bumthang",
+      details: `Embark on a scenic drive from Punakha to Bumthang via Trongsa, a journey of around 8 hours that takes you over the Pele La Pass (3,420 m) on the Black Mountain range. Along the way, stop to visit the beautiful Chendebji Chorten, an 18th-century stupa.
+After lunch, explore Trongsa Dzong, the largest fortress in Bhutan, offering breathtaking panoramic views of the surrounding valleys. You’ll also visit the Ta Dzong Museum, which houses an impressive collection of historical artifacts from the Royal Family. The journey then continues to Bumthang, home to some of Bhutan’s most ancient palaces and temples. Overnight stay at your lodge in Jakar, Bumthang.`,
+    },
+    {
+      day: "Day 07: Bumthang",
+      details: `Begin your day with a visit to Kurjey Lhakhang, one of the most sacred monasteries in Bhutan where Guru Rimpoche, the patron saint of the country, once meditated. Continue to Jambay Lhakhang, a 7th-century temple of great historical and spiritual significance.
+After lunch, explore Jakar Dzong and Tamshing Lhakhang, founded in 1501 by the revered saint Pemalingpa, known for its remarkable ancient Buddhist wall paintings. Later, enjoy a leisurely stroll through the charming village of Jakar, the main township of Bumthang. Overnight stay at your lodge in Jakar, Bumthang.`,
+    },
+    {
+      day: "Day 08: Bumthang",
+      details: `Spend the day exploring the cultural and historical treasures of Bumthang. Begin with a visit to the 16th-century Tang Ugyen Chholing Palace, which houses a fascinating museum offering deep insights into traditional rural life in Bhutan.
+Continue your journey to the sacred Mebartso, or “The Burning Lake”, a revered site steeped in legend and spiritual significance.`,
+    },
+    {
+      day: "Day 09: Bumthang - Gantey",
+      details: `Begin your journey early with a scenic drive to Gangtey (approximately 6 hours from Bumthang). Along the way, admire the charming rural landscapes dotted with traditional farmhouses and temples, and catch glimpses of local farmers wearing the distinctive woven bamboo hats typical of central Bhutan.
+Upon arrival, visit the Gangtey Goempa (Monastery) — the only Nyingmapa monastery in western Bhutan — and spend time exploring the breathtaking Phobjikha Valley, renowned for its population of Black-Necked Cranes. Overnight at your hotel in Phobjikha.`,
+    },
+    {
+      day: "Day 10: Gantey - Paro",
+      details: `In the morning, enjoy a visit to observe the Black-Necked Cranes (available only in winter) before beginning your journey back to Paro (approximately 7 hours). The drive descends gently into the warm Punakha Valley and then ascends once again over the scenic Dochu La Pass. Overnight at your hotel in Paro.`,
+    },
+    {
+      day: "Day 11: Paro",
+      details: `After breakfast, hike to Taktsang Monastery. In the afternoon, drive to the nearly fully reconstructed Drukgyel Dzong. The original fortress, built by Shabdrung in 1644 to commemorate his victory over invading Tibetans, was destroyed by fire in 1951. On the return drive to Paro, visit other notable sights in the Paro Valley. Overnight at your hotel in Paro.`,
+    },
+    {
+      day: "Day 12: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Explore key Buddhist heritage sites across central and westernBhutan.",
@@ -161,7 +221,7 @@ Upon arrival, visit the Gangtey Goempa (Monastery) — the only Nyingmapa monast
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

@@ -56,6 +56,54 @@ const ParoTsechu = () => {
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport - Paro",
+      details: `Upon arrival at Bagdora Airport, you will be driven to the Bhutan border town of Phuentsholing. After completing immigration and customs formalities at the Phuentsholing checkpoint, your private guide and driver will welcome you and assist you across the border. Phuentsholing serves as the main gateway to western Bhutan and connects with Jaigaon on the Indian side. You will visit the Zangthopelri Lhakhang located in the town center before continuing your journey toward Paro. In the evening, enjoy a welcome drink and dinner, followed by an overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 02: Paro",
+      details: `After breakfast, embark on a hike to Taktsang Monastery, a 1.5 to 2-hour uphill trek that ascends nearly a kilometer above the Paro valley floor. For those unable to hike, horses can be arranged up to the cafeteria. In the afternoon, attend the Paro festival, where locals in their finest attire gather from miles around to witness masked dances, offer prayers, and enjoy festive feasts.`,
+    },
+    {
+      day: "Day 03: Paro - Thimphu",
+      details: `Rise very early at 2:30 am and drive to Paro Dzong to witness the Thongdroel ceremony, where a large cloth painting of Guru Rinpoche is ceremoniously unfurled on the Dzong’s facade. En route, make a stop at Tamchhog Lhakhang, the hereditary temple dedicated to Bhutan’s famed iron bridge builder.`,
+    },
+    {
+      day: "Day 04: Thimphu",
+      details: `Spend a full day exploring Thimphu, visiting the National Memorial Chorten, Changangkha Temple, Zilukha Nunnery, and the National Library, which preserves a remarkable collection of Bhutanese scriptures dating back to the 8th century.`,
+    },
+    {
+      day: "Day 05: Thimphu - Trongsa",
+      details: `Drive from Thimphu to Trongsa, a journey of 7–8 hours crossing the Dochu-La pass (3,100m) and Pele La pass (3,420m) along the Black Mountain range. En route, stop to admire the beautiful Chendebji Chorten. Trongsa, the destination, is the ancestral home of Bhutan’s royal dynasty.`,
+    },
+    {
+      day: "Day 06: Trongsa - Bumthang",
+      details: `In the morning, visit Trongsa Dzong, a stunning example of Bhutanese architecture, and the Ta Dzong museum, which showcases an impressive collection of the Royal Family’s historical artifacts and traditional armor. Afterward, continue the journey toward Bumthang, the spiritual heartland of Bhutan. The road climbs steeply to Yo Yutung La Pass (3,400m) before descending through dense coniferous forests into Chumey Valley.`,
+    },
+    {
+      day: "Day 07: Bumthang",
+      details: `Spend the day exploring the highlights of Bumthang. Visit the 16th-century Tang Ugyen Chholing Palace, which houses a museum offering a fascinating insight into traditional rural life in Bhutan. Continue to Mebartso, the “Lake of Fire,” where Pemalingpa, the founder of the Nyingmapa sect, is believed to have discovered a treasure hidden by Guru Rinpoche. Overnight at your lodge in Jakar, Bumthang.`,
+    },
+    {
+      day: "Day 08: Bumthang - Punakha",
+      details: `Depart for Punakha, the ancient capital of Bhutan, with a stop in Trongsa for lunch along the way. Upon arrival, take a leisurely stroll through Punakha town before retiring for the night at your hotel in Punakha.`,
+    },
+    {
+      day: "Day 09: Punakha",
+      details: `Visit Punakha Dzong, known as the “Palace of Great Happiness,” constructed in 1637 by the Shabdrung, the ‘Unifier of Bhutan,’ as foretold by the revered Guru Rimpoche (Padmasambhava). Afterwards, take a short drive to reach Chimi Lhakhang, the temple of Lama Drukpa Kuenly, famously known as the Divine Madman.`,
+    },
+    {
+      day: "Day 10: Punakha - Paro",
+      details: `In the morning, drive to Yabesa village and hike through the rice fields up to Khamsum Yueley Namgyal Chorten, constructed by Her Majesty Queen Ashi Tshering Yangdon Wangchuk. Afterwards, continue your journey to Paro.`,
+    },
+    {
+      day: "Day 11: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Experience the lively Paro Tshechu festival featuring sacred masked dances.",
@@ -152,7 +200,7 @@ const ParoTsechu = () => {
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

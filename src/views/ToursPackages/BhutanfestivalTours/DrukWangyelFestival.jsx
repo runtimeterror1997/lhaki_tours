@@ -43,6 +43,42 @@ const DrukWangyelFestival = () => {
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport - Thimphu",
+      details: `Upon arrival at Bagdora Airport, you will be driven to the Bhutan border town of Phuentsholing. After completing immigration and customs formalities at the Phuentsholing checkpoint, your private guide and driver will welcome you and assist you across the border. Phuentsholing serves as the main gateway to western Bhutan and connects with Jaigaon on the Indian side. You will visit the Zangthopelri Lhakhang located in the town center before continuing your journey toward Thimphu. In the evening, enjoy a welcome drink and dinner, followed by an overnight stay at a hotel in Thimphu.`,
+    },
+    {
+      day: "Day 02: Thimphu",
+      details: `Spend a full day exploring Thimphu’s highlights, beginning with the magnificent Buddha Dordenma Statue, followed by the National Memorial Chorten. Continue to the 12th-century Changangkha Temple and The National Library, which preserves Bhutanese scriptures dating back to the 8th century. Conclude your sightseeing at Tashichhodzong, a majestic fortress that houses several government ministries, His Majesty’s secretariat, and the central monk body.`,
+    },
+    {
+      day: "Day 03: Thimphu - Punakha",
+      details: `Depart Thimphu early after breakfast and drive up to Dochu-La Pass (3,100 meters) to witness the spectacular Druk Wangyal Festival, a highlight of Bhutanese cultural celebrations. Afterwards, continue to the Royal Botanical Park at Lamperi, which spans an altitude range of 2,100m to 3,800m and covers 47 square kilometers, serving as a biological corridor connecting Jigme Dorji and Jigme Singye Wangchuck National Parks. Proceed to Punakha, where you can spend the rest of the day at leisure, enjoying a stroll through the town in the evening. Overnight stay at a hotel in Punakha.`,
+    },
+    {
+      day: "Day 04: Punakha",
+      details: `Punakha, the ancient capital of Bhutan, is home to the impressive Punakha Dzong, also known as the “Palace of Great Happiness,” built in 1637 by the Shabdrung. After lunch, enjoy a leisurely walk to Chimi Lhakhang, the temple of the revered Drukpa Kuenly, popularly known as the Divine Madman.`,
+    },
+    {
+      day: "Day 05: Punakha - Paro",
+      details: `In the morning, drive to Yabesa village and hike through rice fields up to Khamsum Yueley Namgyal Chorten, built by Her Majesty Queen Ashi Tshering Yangdon Wangchuk. On the way to Paro, stop at Semtokha Dzong, built in 1627 and the oldest Dzong in Bhutan, now home to the Institute for Language and Culture Studies. Upon arrival in Paro, check into your hotel for an overnight stay.`,
+    },
+    {
+      day: "Day 06: Paro",
+      details: `After breakfast, embark on a hike to Taktsang Monastery. The broad trail takes approximately 2 hours uphill, reaching nearly a kilometer above the Paro valley floor; for those unable to hike, a horse can be arranged to the viewing point. In the afternoon, drive to the nearly fully reconstructed Drukgyel Dzong.`,
+    },
+    {
+      day: "Day 07: Paro - Thimphu - Paro",
+      details: `After an early breakfast, drive back to Thimphu to witness the National Day celebrations at Changlimithang Ground alongside the locals. Bhutan observes 17th December as National Day, commemorating the enthronement of Gongsar Ugyen Wangchuck as the first hereditary monarch in 1907. The day features a variety of cultural and sporting activities and concludes with a Tashi Lebay, a prayer for many more prosperous and joyous days for Bhutan and its people. After the celebrations, drive back to Paro and overnight at your hotel.`,
+    },
+    {
+      day: "Day 08: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Enjoy majestic views of the Himalayan mountains from Dochula Pass.",
@@ -140,7 +176,7 @@ const DrukWangyelFestival = () => {
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

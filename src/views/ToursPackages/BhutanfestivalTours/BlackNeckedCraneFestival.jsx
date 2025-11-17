@@ -43,6 +43,42 @@ const BlackNeckedCraneFestival = () => {
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport - Thimphu",
+      details: `Upon arrival at Bagdora Airport, you will be driven to the Bhutan border town of Phuentsholing. After completing immigration and customs formalities at the Phuentsholing checkpoint, your private guide and driver will welcome you and assist you across the border. Phuentsholing serves as the main gateway to western Bhutan and connects with Jaigaon on the Indian side. You will visit the Zangthopelri Lhakhang located in the town center before continuing your journey toward Thimphu. In the evening, enjoy a welcome drink and dinner, followed by an overnight stay at a hotel in Thimphu.`,
+    },
+    {
+      day: "Day 02: Thimphu",
+      details: `After breakfast, you will explore Thimphu’s key attractions, beginning with the King’s Memorial Chorten, built in memory of the third King of Bhutan (1952–1972), followed by Buddha Point and Changangkha Monastery. Continue to the radio tower for panoramic views of Thimphu Valley and the Thimphu Dzong, and then visit the zoo, home to Bhutan’s national animal, the takin. Next, explore the nunnery temple, the National Library housing ancient manuscripts, and the School of Arts and Crafts. After a relaxing lunch, visit the National Institute of Traditional Medicine, a traditional paper factory, and the majestic Tashichhodzong. Overnight stay in Thimphu.`,
+    },
+    {
+      day: "Day 03: Thimphu - Punakha",
+      details: `Drive over the Dochu-La Pass (3,100 meters), which on a clear day provides breathtaking views of the Himalayan peaks, before descending into the warm and scenic Punakha Valley (approximately 3 hours of driving). Punakha, the ancient capital of Bhutan, is home to the Punakha Dzong, the “Palace of Great Happiness,” built in 1637 by the Shabdrung, the ‘Unifier of Bhutan,’ as foretold by Guru Rinpoche (Padmasambhava). After lunch, drive about 12 km from the main road and take a walk across rice fields and a river to reach the Khamsum Yulley Namgyal Chorten, perched on a beautiful hillock called Ngezergang, housing paintings and statues of the Nyingmapa tradition. Continue to Metshina Village for a 20-minute walk through rice fields to Chimi Lhakhang, a fertility temple where visitors may receive a special blessing. Overnight stay in Punakha.`,
+    },
+    {
+      day: "Day 04: Punakha - Gantey",
+      details: `Begin the day with a drive to Gangtey, passing through lush forests of oak and rhododendron. Upon arrival at Gangtey village, visit Gangtey Gompa, the only Nyingmapa monastery in western Bhutan. From here, enjoy scenic views of the Black Mountain range and the Phobjikha Valley, which serves as the winter home of the black-necked cranes. Overnight stay at a hotel in Gangtey.`,
+    },
+    {
+      day: "Day 05: Attend Black Neck Crane festival",
+      details: `Today, participate in the Black-Necked Crane Festival, held annually in the courtyard of Gangtey Goenpa in Phobjikha Valley. The festival features cultural performances including folk songs and dances—some inspired by the black-necked cranes—mask dances by locals, crane-themed dances, and environmental conservation dramas and songs by schoolchildren. You will also have time to observe the Black-Necked Cranes, visit the Information Centre, and explore the valley’s scenic nature trails. Overnight stay at a hotel in Gangtey.`,
+    },
+    {
+      day: "Day 06: Gangtey - Paro",
+      details: `Explore the scenic Phobjikha Valley, renowned as one of Bhutan’s most beautiful valleys, and visit the Education Center managed by the Royal Society for the Protection of Nature (RSPN). Afterwards, drive to Paro, stopping en route at Wangdi Town and nearby villages known for their stone and slate carvings. A short distance from the town, you can also see Rinchengang, one of Bhutan’s most unique villages. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 07: Hike to Paro Tiger’s Nest Monastery",
+      details: `After breakfast, embark on a hike to Taktsang Monastery. The trail is wide, and the uphill walk of approximately 1.5 to 2 hours ascends nearly a kilometer above the Paro valley floor. For those unable to hike, a horse can be arranged to reach the cafeteria. In the afternoon, drive to the nearly fully reconstructed Drukgyel Dzong, originally built by Shabdrung in 1644 to commemorate his victory against invading Tibetans, though it was destroyed by fire in 1951. Later, enjoy a leisurely stroll through Paro market and town. Overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 08: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Enjoy majestic views of the Himalayan mountain ranges from Dochula Pass.",
@@ -139,7 +175,7 @@ const BlackNeckedCraneFestival = () => {
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );

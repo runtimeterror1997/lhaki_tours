@@ -50,6 +50,46 @@ const PunakhaTsechu = () => {
     },
   ];
 
+  const via_pling = [
+    {
+      day: "Day 1: Arrival at Phuentsholing via Bagdora Airport - Paro",
+      details: `Upon arrival at Bagdora Airport, you will be driven to the Bhutan border town of Phuentsholing. After completing immigration and customs formalities at the Phuentsholing checkpoint, your private guide and driver will welcome you and assist you across the border. Phuentsholing serves as the main gateway to western Bhutan and connects with Jaigaon on the Indian side. You will visit the Zangthopelri Lhakhang located in the town center before continuing your journey toward Paro. In the evening, enjoy a welcome drink and dinner, followed by an overnight stay at a hotel in Paro.`,
+    },
+    {
+      day: "Day 02: Paro",
+      details: `After breakfast, embark on a hike to Taktsang Monastery. The trail is wide, and the uphill walk of about 1.5 to 2 hours leads you high above Paro Valley, offering a stunning view of Taktsang Monastery perched dramatically on a sheer cliff 900 meters above the valley floor. In the afternoon, continue with a drive to the nearly fully restored Drukgyel Dzong.`,
+    },
+    {
+      day: "Day 03: Paro - Punakha",
+      details: `Drive across Dochu-La Pass (3,100 meters), where clear skies reveal breathtaking views of the Himalayan peaks, before descending into the warm Punakha Valley (approximately 4 hours of driving). Upon arrival, head to Punakha Dzong, the “Palace of Great Happiness,” to participate in the festival.`,
+    },
+    {
+      day: "Day 04: Punakha (Punakha Festival)",
+      details: `Spend the morning at Punakha Dzong attending the Punakha Tsechu festival, where monks in vibrant brocade costumes perform masked dances accompanied by chants and readings of Buddhist scriptures. After lunch, take a short walk to visit Chimi Lhakhang, the temple dedicated to Drukpa Kunley, also known as the Divine Madman.`,
+    },
+    {
+      day: "Day 05: Punakha - Gantey",
+      details: `Transfer to Phobjikha Valley (about 3 hours) via Wangduephodrang, driving along a winding mountain road through oak and rhododendron forests and over a high pass into the scenic valley. Phobjikha, one of Bhutan’s few glacial valleys, serves as the winter home of black-necked cranes (November–March) migrating from Tibet. After lunch, visit the Phobjikha Sanctuary to observe the cranes (Nov–Mar only) and explore Gangtey Gompa, a 16th-century monastery.`,
+    },
+    {
+      day: "Day 06: Phobjikha Valley - Thimphu",
+      details: `In the morning, take a walk to meet local schoolchildren who travel long distances to attend classes. Phobjikha is a haven for nature enthusiasts and hikers, with many scenic trails around the valley. Visit the beautifully renovated Gangtey Monastery, known for its intricate architecture and paintings, then walk back down through the village. After lunch, drive back to Thimphu, crossing Dochula Pass once again.`,
+    },
+    {
+      day: "Day 07: Thimphu",
+      details: `Spend a full day exploring Thimphu, beginning with the National Memorial Chorten, which showcases Buddhist faith through its paintings and statues. Continue to the 12th-century Changangkha Temple and Drubthob Monastery, home to the Zilukha Nunnery. Time permitting, visit the Takin enclosure, the national animal of Bhutan, and Tashichhodzong, the “Fortress of the Glorious Religion,” which also houses government offices, His Majesty’s secretariat, and the central monastic body.`,
+    },
+    {
+      day: "Day 08: Thimphu - Paro",
+      details: `Continue your Thimphu sightseeing by visiting the School of Arts and Crafts, where students learn 13 traditional Bhutanese art forms. Explore the National Library, home to Bhutanese scriptures dating back to the 8th century, and the Traditional Paper Factory, which showcases the Bhutanese paper-making process. Also, visit the Folk Heritage Museum, featuring a detailed replica of a medieval farmhouse. In the late afternoon, transfer to Paro for an overnight stay at your hotel.`,
+    },
+    {
+      day: "Day 09: Paro - Phuentsholing/Drop",
+      details:
+        "In the morning, visit to National Museum and Rinpung Dzong and then Drive to Phuntsholing.",
+    },
+  ];
+
   const tripHighlights = [
     {
       key: "Attend the Punakha Tshechu festival, experiencing Bhutanese art and masked dances.",
@@ -146,7 +186,7 @@ const PunakhaTsechu = () => {
         tourDetails={tourDetails}
         image={hidden}
       />
-      <Itinerary itinerary={itinerary} />
+      <Itinerary itinerary={itinerary} via_pling={via_pling} show={true} />
       <TourServices />
     </Box>
   );
