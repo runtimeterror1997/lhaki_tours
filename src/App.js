@@ -1,3 +1,6 @@
+import ServiceSuspended from "./views/ServiceSuspended";
+
+/*
 import React, { lazy, Suspense, useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -154,6 +157,11 @@ function App() {
       <Footer />
     </Router>
   );
+}
+*/
+
+function App() {
+  return <ServiceSuspended />;
 }
 
 export default App;

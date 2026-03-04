@@ -63,7 +63,7 @@ const Itinerary = ({ itinerary, via_pling, via_east, show, isFromEast }) => {
               sx={{
                 mt: 1,
                 backgroundColor:
-                  selectedRoute === "via-paro" ? "#08452E" : "#8e8c8cff",
+                  selectedRoute === "via-paro" ? "#08452E" : "#bbb",
                 borderRadius: "8px",
                 padding: "2",
               }}
@@ -80,9 +80,7 @@ const Itinerary = ({ itinerary, via_pling, via_east, show, isFromEast }) => {
               sx={{
                 mt: 1,
                 backgroundColor:
-                  selectedRoute === "via-phuntsholing"
-                    ? "#08452E"
-                    : "#8e8c8cff",
+                  selectedRoute === "via-phuntsholing" ? "#08452E" : "#bbb",
                 borderRadius: "8px",
                 padding: "2",
               }}
@@ -100,7 +98,7 @@ const Itinerary = ({ itinerary, via_pling, via_east, show, isFromEast }) => {
                 sx={{
                   mt: 1,
                   backgroundColor:
-                    selectedRoute === "via-east" ? "#08452E" : "#8e8c8cff",
+                    selectedRoute === "via-east" ? "#08452E" : "#bbb",
                   borderRadius: "8px",
                   padding: "2",
                 }}
