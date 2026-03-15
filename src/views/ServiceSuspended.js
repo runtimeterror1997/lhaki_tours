@@ -45,11 +45,6 @@ const ServiceSuspended = () => {
     color: '#555'
   };
 
-  const contactStyle = {
-    fontSize: '16px',
-    fontWeight: '600',
-    color: '#007bff'
-  };
 
   return (
     <div style={containerStyle}>
