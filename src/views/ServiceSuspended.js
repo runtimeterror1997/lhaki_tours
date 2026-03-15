@@ -56,15 +56,10 @@ const ServiceSuspended = () => {
       <div style={cardStyle}>
         <div style={iconStyle}>⚠️</div>
         <h1 style={titleStyle}>Service Temporarily Suspended</h1>
+        
         <p style={messageStyle}>
-          Access to this website has been temporarily suspended due to outstanding payments to the developer.
+          Please contact your developer to resolve this matter.
         </p>
-        <p style={messageStyle}>
-          <strong>Note to Website Owner:</strong> Please settle the dues to restore full access to your website.
-        </p>
-        <div style={{ marginTop: '30px', borderTop: '1px solid #eee', paddingTop: '20px' }}>
-          <p style={contactStyle}>Contact your developer to resolve this matter.</p>
-        </div>
       </div>
     </div>
   );
